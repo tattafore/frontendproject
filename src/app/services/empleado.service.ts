@@ -9,8 +9,8 @@ export class EmpleadoService {
 
   selectedEmpleado: Empleado;
   empleados: Empleado[];
-  readonly URL_API = 'http://localhost:3005/api/empleados';
-
+  //readonly URL_API = 'http://localhost:3005/api/empleados';
+    readonly URL_API = 'https://backendproject-eight.vercel.app/api/empleados/';
   constructor(private http:HttpClient) {
     this.selectedEmpleado =new Empleado();
     this.empleados=[];
